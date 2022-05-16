@@ -2,7 +2,7 @@
 //  calculatorUITestsLaunchTests.swift
 //  calculatorUITests
 //
-//  Created by Гость on 22.04.2022.
+//  Created by Гость on 16.05.2022.
 //
 
 import XCTest
