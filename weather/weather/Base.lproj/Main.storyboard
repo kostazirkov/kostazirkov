@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="weather" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" fixedFrame="YES" image="back_weather" translatesAutoresizingMaskIntoConstraints="NO" id="ARR-8T-AV8">
+                                <rect key="frame" x="-68" y="-150" width="537" height="1197"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Погодные условия" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5nO-09-e7f">
+                                <rect key="frame" x="77" y="244" width="251.5" height="85"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="85" id="PnL-Lr-GBp"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="29"/>
+                                <color key="textColor" systemColor="systemBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12°" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kHY-ct-YBk">
+                                <rect key="frame" x="77" y="337" width="85" height="69"/>
+                                <fontDescription key="fontDescription" name="Georgia" family="Georgia" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aNC-va-teU">
+                                <rect key="frame" x="170" y="337" width="119" height="69"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Moscow" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xfk-KW-787">
+                                <rect key="frame" x="23" y="167" width="368" height="69"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="69" id="9Ts-JQ-fsg"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="40"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Xfk-KW-787" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="1Wj-Ux-lx2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="aNC-va-teU" secondAttribute="trailing" constant="125" id="AI7-LF-scJ"/>
+                            <constraint firstItem="kHY-ct-YBk" firstAttribute="top" secondItem="aNC-va-teU" secondAttribute="top" id="FgJ-c3-v3A"/>
+                            <constraint firstItem="5nO-09-e7f" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="77" id="Hak-9t-yV1"/>
+                            <constraint firstItem="aNC-va-teU" firstAttribute="leading" secondItem="kHY-ct-YBk" secondAttribute="trailing" constant="8" id="Kxr-be-dRp"/>
+                            <constraint firstItem="Xfk-KW-787" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="23" id="OFQ-35-ebQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kHY-ct-YBk" secondAttribute="bottom" constant="456" id="blO-b8-5Sw"/>
+                            <constraint firstItem="kHY-ct-YBk" firstAttribute="leading" secondItem="5nO-09-e7f" secondAttribute="leading" id="caD-H5-3uO"/>
+                            <constraint firstItem="kHY-ct-YBk" firstAttribute="top" secondItem="5nO-09-e7f" secondAttribute="bottom" constant="8" id="e9p-Xw-3Df"/>
+                            <constraint firstItem="5nO-09-e7f" firstAttribute="top" secondItem="Xfk-KW-787" secondAttribute="bottom" constant="8" id="ibR-dd-5Rx"/>
+                            <constraint firstItem="kHY-ct-YBk" firstAttribute="bottom" secondItem="aNC-va-teU" secondAttribute="bottom" id="s6y-hV-tsX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="cityName" destination="Xfk-KW-787" id="dgv-bl-gpc"/>
+                        <outlet property="temp" destination="kHY-ct-YBk" id="7Lz-me-n2T"/>
+                        <outlet property="weatherDescription" destination="5nO-09-e7f" id="j2W-xB-n0f"/>
+                        <outlet property="weatherimgview" destination="aNC-va-teU" id="HyM-8X-5UX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92.753623188405811" y="83.705357142857139"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="back_weather" width="750" height="1334"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
